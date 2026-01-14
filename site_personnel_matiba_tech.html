@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matiba Tech — Ingénieur IT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0d10;
+      --card:#12151b;
+      --accent:#c9a24d;
+      --text:#eaeaea;
+      --muted:#9aa0a6;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:'Inter',sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.7;
+    }
+    header{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:40px;
+      background:radial-gradient(circle at top,#1a1f29,#0b0d10 60%);
+    }
+    header h1{
+      font-size:3.2rem;
+      margin:0;
+      letter-spacing:1px;
+    }
+    header span{color:var(--accent)}
+    header p{
+      max-width:720px;
+      margin:25px auto;
+      color:var(--muted);
+      font-size:1.1rem;
+    }
+    .cta a{
+      display:inline-block;
+      margin:10px;
+      padding:14px 28px;
+      border-radius:30px;
+      text-decoration:none;
+      font-weight:600;
+      transition:.3s;
+    }
+    .primary{
+      background:var(--accent);
+      color:#000;
+    }
+    .secondary{
+      border:1px solid var(--accent);
+      color:var(--accent);
+    }
+    .cta a:hover{transform:translateY(-3px)}
+
+    section{
+      padding:90px 12%;
+    }
+    h2{
+      font-size:2.4rem;
+      margin-bottom:25px;
+      color:var(--accent);
+    }
+    .about p{max-width:900px}
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:30px;
+    }
+    .card{
+      background:var(--card);
+      padding:30px;
+      border-radius:18px;
+      border:1px solid #1f2530;
+      transition:.3s;
+    }
+    .card:hover{transform:translateY(-6px)}
+    .card h3{margin-top:0;color:#fff}
+    .card p{color:var(--muted)}
+
+    .timeline{
+      border-left:2px solid var(--accent);
+      padding-left:30px;
+    }
+    .timeline div{margin-bottom:35px}
+    .timeline span{color:var(--accent);font-weight:600}
+
+    footer{
+      padding:40px;
+      text-align:center;
+      background:#07090c;
+      color:var(--muted);
+      font-size:.9rem;
+    }
+
+    @media(max-width:768px){
+      header h1{font-size:2.4rem}
+      section{padding:70px 8%}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Matiba <span>Tech</span></h1>
+    <p>
+      Ingénieur en informatique de gestion, spécialisé dans la conception de systèmes d'information
+      et le développement de solutions numériques modernes.
+      Né à Kinshasa, basé à Bukavu — je construis des outils utiles, solides et durables.
+    </p>
+    <div class="cta">
+      <a href="#projects" class="primary">Voir mes projets</a>
+      <a href="#contact" class="secondary">Me contacter</a>
+    </div>
+  </div>
+</header>
+
+<section class="about">
+  <h2>À propos</h2>
+  <p>
+    Je m'appelle Matiba, né le 18 août 2002 à Kinshasa. Passionné par la technologie et la
+    structuration des systèmes complexes, j'ai choisi l'informatique de gestion pour répondre
+    à un besoin concret : rendre les organisations plus efficaces grâce au numérique.
+  </p>
+  <p>
+    Mon travail repose sur une approche rigoureuse : analyse des besoins, modélisation claire,
+    implémentation propre et documentation sérieuse. Je privilégie des solutions adaptées
+    au contexte africain tout en respectant les standards internationaux.
+  </p>
+</section>
+
+<section>
+  <h2>Compétences clés</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Systèmes d'information</h3>
+      <p>Analyse, modélisation UML, architecture applicative, organisation des processus.</p>
+    </div>
+    <div class="card">
+      <h3>Développement web</h3>
+      <p>Front-end moderne, bases back-end, logique applicative et structuration des données.</p>
+    </div>
+    <div class="card">
+      <h3>Informatique de gestion</h3>
+      <p>Optimisation des flux, digitalisation des procédures, solutions orientées décision.</p>
+    </div>
+    <div class="card">
+      <h3>Documentation & méthode</h3>
+      <p>Méthodes UP, rédaction technique, conception orientée durabilité.</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projets</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Système de recrutement (ATS)</h3>
+      <p>
+        Conception d'une plateforme complète de gestion des candidatures : offres,
+        pipeline de sélection, espace administrateur et postulants.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Projets académiques</h3>
+      <p>
+        Modélisation de systèmes d'information, bases de données relationnelles,
+        prototypes d'applications de gestion.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Solutions web</h3>
+      <p>
+        Développement de sites et outils numériques sobres, rapides et orientés impact.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Parcours</h2>
+  <div class="timeline">
+    <div>
+      <span>2002</span> — Naissance à Kinshasa
+    </div>
+    <div>
+      <span>Licence</span> — Informatique de gestion
+    </div>
+    <div>
+      <span>Aujourd'hui</span> — Développement de solutions numériques à Bukavu
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>
+    Intéressé par une collaboration, un projet ou une opportunité professionnelle ?
+  </p>
+  <p>
+    📧 matibasamm@gmail.com<br>
+    📱 +243 810 935 112<br>
+    📍 Bukavu — République Démocratique du Congo
+  </p>
+</section>
+
+<footer>
+  © 2026 — Matiba Tech · Ingénierie informatique · Afrique vers le monde
+</footer>
+
+</body>
+</html>
